@@ -1,0 +1,27 @@
+{% extends 'SpxMainBundle:Securite:securite.html.twig' %}
+
+{% block modele %}
+
+<div>
+	<h2>Conception et qualité</h2>
+	<p>Les produits SPARXS sont entièrement conçus et fabriqués en France.</p>
+	<p>Pour la fabrication de ses produits, Sparxs a soigneusement sélectionné tous ses partenaires sur la base de quelques critères essentiels:</p>
+	<ul>
+		<li>Organisation qualité</li>
+		<li>Capacité à produire de grandes séries</li>
+		<li>Productivité et réactivité<li>
+	</ul>
+	<p>Sparxs est propriétaire des brevets qu'il met en oeuvre dans ses blocs de combustion.</p>
+</div>
+<div align="center">
+	<div style="text-align: center; display: inline-block; margin: 20px">
+		<img height="200px" src="{{ asset('img/Securite/prod-2.jpg') }}" alt="réservoir bruleur éthanol" />
+		<p><small><span style="font-family: Helvetica,Arial,sans-serif;">Site de fabrication Sparx en Rhône Alpes</span></small></p>
+	</div>
+	<div style="text-align: center; display: inline-block; margin: 20px">
+		<img height="200px" src="{{ asset('img/Securite/prod-1.jpg') }}" alt="réservoir bruleur éthanol" />
+		<p><small><span style="font-family: Helvetica,Arial,sans-serif;">Outil de fabrication</span></small></p>
+	</div>
+</div>
+
+{% endblock %}

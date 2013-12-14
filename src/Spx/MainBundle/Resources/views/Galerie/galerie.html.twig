@@ -1,0 +1,10 @@
+{% extends 'SpxMainBundle:Default:links.html.twig' %}
+
+{% block title %}Galerie, vidéo et photos des cheminées Sparxs{% endblock %}
+
+{% block header %}Galerie, vidéo et photos{% endblock %}
+
+{% block menu %}
+<li id="navbar-fonctionnement"><a href="{{ path('spx_main_galerie_fonctionnement') }}">Fonctionnement (vidéo)</a></li>
+<li id="navbar-photos"><a href="{{ path('spx_main_galerie_photos') }}">Galerie de photos</a></li>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'SpxMainBundle:Galerie:galerie.html.twig' %}
+
+{% block modele %}
+
+<h2>Fonctionnment du brûleur Topdeck by Sparxs</h2>
+<h4>Voici une vidéo explicative du fonctionnement simple et sécurisée des brûleurs Sparxs</h4>
+<div style="margin: 20px;">
+	<div id="ytplayer" style="border: solid 1px #C8C8C8"></div>
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '390',
+      width: '640',
+      videoId: 'YNyC4lGcokY'
+    });
+  }
+</script>
+
+{% endblock %}

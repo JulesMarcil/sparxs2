@@ -1,0 +1,4 @@
+spx_main:
+    resource: "@SpxMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

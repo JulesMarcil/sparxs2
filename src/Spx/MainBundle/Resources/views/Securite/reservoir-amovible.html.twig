@@ -1,0 +1,20 @@
+{% extends 'SpxMainBundle:Securite:securite.html.twig' %}
+
+{% block modele %}
+
+<div class="panneau_principal">
+	<h2>Pévention du risque de débordement d'éthanol</h2>
+	<p>Le remplissage des brûleurs ou cheminées est une opération délicate: l'éthanol est volatile et incolore.</p>
+	<div style="position: relative; float: right; min-height: 260px; width: 310px;">
+		<div style="text-align: center;"><img style="border-style: none; width: 300px; height: 251px; float: right;" alt="réservoir bruleur éthanol" src="{{ asset('img/Securite/Reservoir-amovible.jpg') }}" /><small><span style="font-family: Helvetica,Arial,sans-serif;">Réservoir amovible livré <br /> avec le modèle TOPDEC</span></small></div>
+	</div>
+	<p>Si l'on doit transvaser directement l'éthanol dans le bloc de combustion<big>*</big>, en cas de débordement (fréquent) il est difficile d'essuyer totalement ce qui a débordé et de vérifier qu'il ne reste pas d'éthanol en dehors du foyer.</p>
+	<p>Afin de répondre à cette problématique, SPARXS propose un réservoir amovible pour ses brûleurs:</p>
+	<ul>
+		<li>l'opération de remplissage d'éthanol se fait en dehors du foyer et en toute sécurité dans un lieu où cette opération est aisée et sûre, par exemple au dessus d'un évier: en cas de débordement du bio éthanol l'essuyage du réservoir est très aisé.</li>
+		<li>le réservoir amovible peut optionnellement se présenter sous la forme de cartouches d'éthanol pré-remplies auquel cas il n'y aura alors pour l'utilisateur jamais de transvasement d'éthanol. La recharge est directement insérée dans le brûleur.</li>
+	</ul>
+	<p>* <small><small>Des pompes à liquide existent qui en théorie limitent le risque mais la pratique montre qu'il n'en est souvent rien et elle sont déconseillées dans le rapport de la Commission de Sécurité des Consommateurs.</small></small></p>
+</div>
+
+{% endblock %}

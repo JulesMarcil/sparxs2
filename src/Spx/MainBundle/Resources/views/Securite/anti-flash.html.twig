@@ -1,0 +1,21 @@
+{% extends 'SpxMainBundle:Securite:securite.html.twig' %}
+
+{% block modele %}
+
+<div>
+	<h2>Prévention de l'effet flash</h2>
+	<p>Conformément à l'exigence de la norme de sécurité <span style="color: red;">NF D35-386</span>, il est impossible lorsque la zone de combustion d'éthanol est encore chaude:</p>
+	<div style="position: relative; float: right; text-align: center; min-height: 150px; font-family: Arial,Helvetica,sans-serif; padding-right: 2px; width: 320px;">
+		<img src="{{ asset('img/Securite/Carte%20electronique%20detouree.jpg') }}" alt="bruleur éthanol" style="width: 300px; height: 175px; float: right;" />
+		<p><small><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;<span style="font-style: italic;">Carte électronique gérant entres autres<br/>les sécurités liées à la température</span></span></small></p>
+	</div>
+	<ul style="margin-left: 11px;" class="liste1">
+		<li>d'accéder au &nbsp;réservoir de combustible</li>
+		<li>de redémarrer une flambée</li>
+	</ul>
+	<p>En effet, lorsque de l'éthanol est en contact avec les parties chaudes d'un brûleur, il se vaporise très vite; les vapeurs d'éthanol, plus lourdes que l'air, se confinent en une boule invisible au dessus du brûleur.</p>
+	<p>En approchant alors une allumette pour démarrer un feu, on va d'abord enflammer les vapeurs d'éthanol qui flottent autour du réservoir. C'est le dangereux Effet Flash qui a déjà provoqué de très graves brûlures avec des foyers à l'éthanol non sécurisés.</p>
+	<p>Les blocs de combustion au bio éthanol SPARXS sont, en conséquence, équipés de <span style="color: red;">détecteurs de température et de systèmes de verrouillage</span> gérés par&nbsp;un microcontroleur électronique.</p>
+</div>
+
+{% endblock %}

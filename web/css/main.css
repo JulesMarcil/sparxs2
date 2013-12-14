@@ -1,0 +1,88 @@
+/* --- Custom CSS -- */
+
+/* --- Style général --- */
+
+p,
+ul > li {
+	font-size: 16px;	
+}
+
+/* --- Index (all pages) --- */
+
+.navbar-brand {
+	color: #E83005; 
+	font-size: 32px; 
+	font-weight: bold
+}
+
+#top-nav > li > a {
+	color: rgb(92,96,99);
+}
+
+#top-nav > li.active {
+	background-color: rgba(210,45,0,0.1);
+}
+
+#navbar-commander > a {
+	padding-top: 8px; 
+	padding-bottom: 8px;	
+}
+
+
+/* --- Accueil --- */
+
+/* --- Links menu --- */
+
+#bandeau {
+	background-image: url('../img/bandeau_ok.jpg'); 
+	background-size: cover;
+	height: 180px;
+	margin-top: -20px;
+}
+
+#bandeau h1 {
+	color:white; 
+	padding-top: 50px; 
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+#link-container {
+	border: solid 1px #C8C8C8;
+}
+#left-nav {
+	margin: 20px 0px;
+}
+#left-nav > li > a {
+	color: rgb(92,96,99);
+	font-weight: bold;
+}
+#left-nav > li.active > a {
+	color: white;
+	background-color: #E83005;
+}
+
+/* --- Galerie --- */
+
+#galerie {
+	margin: 40px auto;
+}
+
+#galerie img {
+	width: 100%; 
+	max-width: 300px;
+	border: solid 1px #C8C8C8;
+}
+
+/* --- News --- */
+
+#news-container {
+	border: solid 1px #C8C8C8;
+}
+
+#news-container .panel-default {
+	border-radius: 0px;
+	margin: 20px 0px;
+}
+
+
+

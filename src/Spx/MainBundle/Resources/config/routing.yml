@@ -1,0 +1,34 @@
+spx_main_homepage:
+    pattern:  /
+    defaults: { _controller: SpxMainBundle:Default:index }
+
+spx_main_produits:
+    pattern:  /produits/{modele}
+    defaults: { _controller: SpxMainBundle:Default:produits }
+
+spx_main_habillages:
+    pattern:  /habillages/{type}
+    defaults: { _controller: SpxMainBundle:Default:habillages }
+
+spx_main_securite:
+    pattern:  /securite/{item}
+    defaults: { _controller: SpxMainBundle:Default:securite }
+
+spx_main_galerie_fonctionnement:
+    pattern:  /galerie/fonctionnement
+    defaults: { _controller: SpxMainBundle:Default:fonctionnement }
+spx_main_galerie_photos:
+    pattern:  /galerie/photos
+    defaults: { _controller: SpxMainBundle:Default:photos }
+
+spx_main_news:
+    pattern:  /news
+    defaults: { _controller: SpxMainBundle:Default:news }
+
+spx_main_commander:
+    pattern:  /nous-trouver
+    defaults: { _controller: SpxMainBundle:Default:commander }
+
+spx_main_mention:
+    pattern:  /mention-legale
+    defaults: { _controller: SpxMainBundle:Default:mention }

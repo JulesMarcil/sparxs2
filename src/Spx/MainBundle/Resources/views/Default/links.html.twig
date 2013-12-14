@@ -1,0 +1,33 @@
+{% extends 'SpxMainBundle:Default:index.html.twig' %}
+
+{% block body %}
+
+<div id="link-container" class="container">
+    <div class="row">
+        <div class="col-md-12" id="bandeau">
+            <h1 align="center">
+            {% block header %}
+            {% endblock %}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-3">
+            <ul id="left-nav" class="nav nav-pills nav-stacked">
+                {% block menu %}
+                {% endblock %}
+            </ul>
+        </div>
+
+        <div class="col-md-9" role="main">
+
+            {% block modele %}
+            {% endblock modele %}
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends 'SpxMainBundle:Default:index.html.twig' %}
+
+{% block title %}Actualités et revue de presse{% endblock %}
+
+{% block body %}
+
+<div id="news-container" class="container bs-docs-container">
+
+    <div class="row">
+        <div class="col-md-12" id="bandeau">
+            <h1 align="center">News</h1>
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 20px">
+		<div class="col-md-8 col-md-offset-2">
+			<h2 align="center">Actualités et revue de presse</h2>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default" style="border-radius: 0px">
+					<div class="panel-heading">
+					  <h4 class="panel-title">01-02-2011 : NOUVEAU : le brûleur TOPDEC se décline en Extra Large !</h4>
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+				        En savoir plus
+				      </a>
+					</div>
+					<div id="collapse7" class="panel-collapse collapse">
+					  <div class="panel-body">
+
+					    *** Rajouter un text explicatif ici avec un <a href="{{ path('spx_main_produits', {'modele' : 'topdec-xl' }) }}">lien vers le modèle topdec xl</a> ***
+
+					  </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">15-11-2010 : Avant toute chose, exigez un Certificat de Conformité</h4>
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+				        En savoir plus
+				      </a>
+					</div>
+					<div id="collapse6" class="panel-collapse collapse">
+					  <div class="panel-body">
+					  	<h5><b>Certificat de conformité</b></h5>
+					  	<p>Avant d'acheter un brûleur ou une cheminée au bio éthanol, il est important  d'exiger du vendeur une copie du certificat de conformité à la norme D35-386 en s'assurant que:</p>
+					    <ul>
+					    	<li>ce certificat émane d'un ORGANISME OFFICIEL ET INDEPENDANT (et non du fabricant lui-même)</li>
+					    	<li>la TOTALITÉ  des tests de la norme D35-386  ont été passés sans non-conformité</li>
+					    </ul>
+					    <p>Il faut également savoir qu'à ce jour,  à l'exception de la NF D35-386, aucune autre norme ne possède d'exigence en matière de sécurité active pour les cheminées à l'éthanol.  La France est pionnière en ce domaine et c'est pourquoi la norme NF D35-386 servira de base à la future norme européenne. Toutes les normes étrangères auquelles certains fabricants essayent de faire référence sont des normes générales de fabrication et non de sécurité: elles ne couvrent pas  les failles  mises en évidence par Commission de Sécurité des Consommateurs.</p>
+					    <p>Vous pouvez télécharger le certificat de conformité SPARXS <a href="http://www.sparxs.fr/documents/Attestation%20LNE%20D35-386.pdf">ici</a>.</p>
+					  </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">07-06-2010 : Etablissements recevant du public Arrêté au JO du 7 juin 2010</h4>
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+				        En savoir plus
+				      </a>
+					</div>
+					<div id="collapse5" class="panel-collapse collapse">
+					  <div class="panel-body">
+					  	<h5><b>Décret pour cheminées à l'éthanol dans les Etablissements Recevant du Public  (ERP)</b></h5>
+					    <p>"Les Cheminées et systèmes de combustion sans conduit à au bio éthanol constituent un réel avantage dans de nombreux Etablissements Recevant du Public. Ils permettent d'apporter facilement de la convivialité et de la chaleur d'un feu sans les contraintes d'une cheminée traditionnelle.</p> 
+						<p>Hotels, restaurants, magasins ont compris l'intérêt de séduire leurs clients par des éléments de bien-être et d'atmosphère. Par contre, les brûleurs à l'éthanol de première génération constituent un risque pour les employés qui les manipulent et pour les clients (cf. le Compte-Rendu de la Commission de Sécurité des Consommateurs de décembre 2008).</p> 
+						<p>Un Arrêté du 7 juin 2010 publié au Journal Officiel rend obligatoire la conformité à la norme D35-386 pour les systèmes de combustion à l'éthanol et précise les précautions particulières d'emploi. Sparxs est à ce jour un des rares acteurs du marché à proposer un système de combustion à l'éthanol entièrement testé et certifié conforme à la NF D35-386 par un organisme officiel et indépendant (LNE)."</p>
+					  </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">06-03-2010 : SPARXS sur LCI</h4>
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+				        En savoir plus
+				      </a>
+					</div>
+					<div id="collapse4" class="panel-collapse collapse">
+					  <div class="panel-body">
+					    
+					    *** Mettre la vidéo sur Youtube et rajouter un player intégré ici (comme dans galerie > fonctionnement) ***
+					  </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">01-06-2009 : Sparxs Grand Prix du Jury de Paris Business Angels</h4>
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+				        En savoir plus
+				      </a>
+					</div>
+					<div id="collapse3" class="panel-collapse collapse">
+					  <div class="panel-body">
+						<img src="{{ asset('img/News/Sparxs%20PBA.jpg') }}" alt="Sparxs grand prix du jury paris business angel">
+					  </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">01-05-2009 : Article de presse dans "Bricoler Coté Maison"</h4>
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+				        En savoir plus
+				      </a>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse">
+					  <div class="panel-body">
+					    <img src="{{ asset('img/News/Bricoler%20cote%20maison.jpg') }}" alt="Sparxs dans bricoler côté maison">
+					  </div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">20-07-2007 : SPARXS sécurise les cheminées à l'éthanol (Usine Nouvelle)</h4>
+					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+				        En savoir plus
+				      </a>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse">
+					  <div class="panel-body">
+					  	<h5><b>Septembre 2007 - Article Usine Nouvelle</b></h5>
+					    <img src="{{ asset('img/News/usine-nouvelle.jpg') }}" alt="Sparxs dans l'Usine Nouvelle">
+					  </div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </div>
+</div>
+
+{% endblock %}

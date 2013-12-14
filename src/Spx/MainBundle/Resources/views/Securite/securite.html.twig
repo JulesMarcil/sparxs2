@@ -1,0 +1,15 @@
+{% extends 'SpxMainBundle:Default:links.html.twig' %}
+
+{% block title %}La Sécurité de nos brûleurs{% endblock %}
+
+{% block header %}La Sécurité{% endblock %}
+
+{% block menu %}
+<li id="navbar-anti-flash"><a href="{{ path('spx_main_securite', {'item' : 'anti-flash' }) }}">Anti-flash</a></li>
+<li id="navbar-qualite"><a href="{{ path('spx_main_securite', {'item' : 'qualite' }) }}">Qualité de combustion</a></li>
+<li id="navbar-reservoir-amovible"><a href="{{ path('spx_main_securite', {'item' : 'reservoir-amovible' }) }}">Réservoir amovible</a></li>
+<li id="navbar-controle-parental"><a href="{{ path('spx_main_securite', {'item' : 'controle-parental' }) }}">Controle parental</a></li>
+<li id="navbar-detection-de-CO2"><a href="{{ path('spx_main_securite', {'item' : 'detection-de-CO2' }) }}">Détection de CO2</a></li>
+<li id="navbar-assurances"><a href="{{ path('spx_main_securite', {'item' : 'assurances' }) }}">Assurances</a></li>
+<li id="navbar-conception"><a href="{{ path('spx_main_securite', {'item' : 'conception' }) }}">Conception & qualité</a></li>
+{% endblock %}

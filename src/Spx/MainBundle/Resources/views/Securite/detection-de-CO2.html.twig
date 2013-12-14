@@ -1,0 +1,20 @@
+{% extends 'SpxMainBundle:Securite:securite.html.twig' %}
+
+{% block modele %}
+
+<div class="panneau_principal">
+	<h2>Pourquoi un détecteur de CO<sub>2</sub> dans les blocs de combustion au bio éthanol ?</h2>
+	<p>Les brûleurs au bio éthanol SPARXS ont été testés et certifiés pour l'excellente qualité de leur combustion naturelle mais ils disposent néanmoins d'un arrêt automatique commandé par l'électronique sur détection de niveau de CO<sub>2</sub>. Pourquoi ?</p>
+	<p>Parce que la combustion naturelle du bio éthanol dans le brûleur SPARXS ne dégage que de la vapeur d'eau (en quantité infime) et du gaz carbonique (avec un bilan carbone neutre <sup>(1)</sup>). Par contre si l'air se&nbsp raréfie en oxygène (petite pièce mal ventilée) la combustion peut alors devenir incomplète et dégager du monoxyde de carbone (CO - inodore et dangereux).</p>
+	<p>Il aurait donc paru naturel de munir l'appareil d'un détecteur de CO: en réalité,&nbsp;ceux-ci sont chers et peu fiables dans le temps.&nbsp;</p> 
+	<p>Pour pallier à cet inconvénient, la commission de normalisation sur les cheminées sans conduit au bio éthanol a décidé d'utiliser la même stratégie que pour les poêles à pétrole, à savoir:</p>
+	<div style="position: relative; float: right; text-align: center; width: 289px; padding-right: 23px; min-height: 120px; font-family: Arial,Helvetica,sans-serif;"><img src="{{ asset('img/Securite/Detecteur-CO2.jpg') }}" alt="cheminee ethanol" /><small><span style="font-family: Helvetica,Arial,sans-serif;"><br />
+	Détecteur de CO2</span></small></div>
+	<ul>
+		<li>détecter la raréfaction en oxygène (antichambre du CO) en vérifiant que le taux de CO<sub>2</sub>&nbsp;reste en dessous du seuil de 0,08% et dans le cas contraire bloquer automatiquement la combustion.</li>
+	</ul>
+	<p> Le brûleur Sparxs répond à ces deux exigences: qualité de combustion naturelle excellente en milieu normalement oxygéné et arrêt automatique en cas de raréfaction de l'oxygène dans l'air.</p>
+	<p style="font-style: italic;"><small>(1) La quantité de CO<sub>2</sub> dégagé par la combustion de l'éthanol est identique à celle absorbée en photosynthèse par la plante qui a servi à faire cet éthanol</small></p>
+</div>
+
+{% endblock %}
