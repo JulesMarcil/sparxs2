@@ -1,11 +1,14 @@
 {% extends 'SpxMainBundle:Default:links.html.twig' %}
 
-{% block title %}Nos habillages pour cheminées{% endblock %}
+{% block title %}Nos différents types d'habillages pour cheminées{% endblock %}
 
-{% block header %}Nos habillages pour cheminées{% endblock %}
+{% block header %}Nos différents types habillages pour cheminées{% endblock %}
 
 {% block menu %}
+
 <li id="navbar-beton"><a href="{{ path('spx_main_habillages', {'type' : 'beton'}) }}">Béton ciré</a></li>
-<li id="navbar-inox-standard"><a href="{{ path('spx_main_habillages', {'type' : 'inox-standard'}) }}">Inox standard</a></li>
-<li id="navbar-inox-sur-mesure"><a href="{{ path('spx_main_habillages', {'type' : 'inox-sur-mesure'}) }}">Inox sur mesure</a></li>
+<li id="navbar-inox-sur-mesure"><a href="{{ path('spx_main_habillages', {'type' : 'inox-sur-mesure'}) }}">Sur mesure</a></li>
+<li id="navbar-inox-standard"><a href="{{ path('spx_main_habillages', {'type' : 'inox-standard'}) }}">Standard</a></li>
+
+
 {% endblock %}
