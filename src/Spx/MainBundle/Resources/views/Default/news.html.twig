@@ -18,15 +18,33 @@
 			<div class="panel-group" id="accordion">
 				<div class="panel panel-default" style="border-radius: 0px">
 					<div class="panel-heading">
-					  <h4 class="panel-title">10-01-2013 : LA GAMME S'ETEND : le brûleur TOPDEC se décline en Extra Extra Large !</h4>
+					  <h4 class="panel-title">25-08-2014 : Les feux de bois interdits en ville et agglomération !</h4>
 					  <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
 				        En savoir plus
 				      </a>
 					</div>
 					<div id="collapse8" class="panel-collapse collapse">
 					  <div class="panel-body">
-					    <p> Après le succès du modèle XL notamment dans les hotels et restaurants mais aussi chez certains particuliers, SPARXS a conçu un modèle encore plus large: le modèle <a href="{{ path('spx_main_produits', {'modele' : 'topdec-xxl' }) }}">Topdec XXL</a> </p>
-
+					    <p>A partir du 1er janvier 2015, les feux de cheminée dans les foyers ouverts seront interdits en Ile de France. En effet, la législation évolue et va de plus en plus étendre la limitation de cette pratique.</p>
+					    <p>La raison en est que les feux de bois génèrent une importante pollution par les particules fines (une demi-journée au coin du feu émet autant de particules fines qu'une voiture diesel qui roulerait pendant 3.500 kms!) et la France commence à suivre des mesures déjà adoptées notamment aux Etats-Unis (par exemple en Californie).</p>
+					    <p>L’arrêté inter-préfectoral du 26 mars 2013 mentionne deux cas:
+					    	<ul>
+					    		<li>dans Paris intra-muros, la combustion de bois sera totalement interdite (aussi bien pour les poêles que pour les cheminées) sauf par dérogation pour des installations très performantes ou dans l'artisanat.</li>
+					    		<li>en Île-de-France si vous avez une cheminée traditionnelle, c'est-à-dire à foyer ouvert, vous ne pourrez plus faire de feu dans les 430 communes énumérées par décret. Vous pourrez continuer de faire du feu si vous avez une chaudière à bois, un poêle ou un foyer fermé type insert.</li>
+					    	</ul>
+					    </p>
+					    <h3>Alors que faire de votre cheminée ?</h3>
+					    <p>Conservez la magie et la présence du feu avec un brûleur sécurisé SPARXS posé dans un <a href="{{ path('spx_main_habillages', {'type' : 'inox-sur-mesure'}) }}">habillage spécialement destiné aux cheminées existantes</a></p>
+					    <p>Placer un bruleur électronique à éthanol SPARXS dans une ancienne cheminée procure de nombreux avantages:
+					    	<ul>
+					    		<li>un très beau design contemporain en parfaite harmonie avec l'ancien</li>
+					    		<li>plus de corvée de bois et de ramonage</li>
+					    		<li>plus de suie: la combustion de l’éthanol ne dégage que de la vapeur d’eau et du CO2 comme la respiration d'un être humain</li>
+					    		<li>en obturant facilement votre conduit avec de la laine de roche, vous chaufferez votre pièce comme avec un très puissant radiateur électrique(2,5 à 4,5 kw). Toute l'énergie de la combustion est conservée dans la pièce alors qu'un feu de bois traditionnel ne conserve que 15-20% de cette énergie.</li>
+					    	</ul>
+					    </p>
+					    <p>Vous avez également la possibilité d'insérer le brûleur entre 2 chenets pour conserver un coté plus rustique.</p>
+					    <p>Rappelons que les produits SPARXS, 100% made in France, sont leaders du marché, cocorico; ils ont non seulement été parmi les tout premiers à satisfaire à la norme de sécurité D35-386 dont les principales obligations sont: l’impossibilité de rallumage à chaud , l’impossibilité de remplissage ou d’accès au combustible en fonctionnement et l’arrêt automatique en cas de taux de CO2 dépassant 0,8 % dans la pièce, mais de plus ils possèdent un réservoir amovible pour encore plus de confort d'utilisation et de sécurité (le remplissage pouvant avoir lieu au dessus d'un évier et non accropui devant la cheminée du salon).</p>
 					  </div>
 					</div>
 				</div>
@@ -90,8 +108,9 @@
 					</div>
 					<div id="collapse4" class="panel-collapse collapse">
 					  <div class="panel-body">
-					    
-					    *** Mettre la vidéo sur Youtube et rajouter un player intégré ici (comme dans galerie > fonctionnement) ***
+					    <div style="margin: 20px;">
+							<div id="ytplayer" style="border: solid 1px #C8C8C8"></div>
+							</div>
 					  </div>
 					</div>
 				</div>
@@ -139,5 +158,28 @@
     	</div>
     </div>
 </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '390',
+      width: '640',
+      videoId: 'XtZhqXLURB0'
+    });
+  }
+</script>
 
 {% endblock %}
