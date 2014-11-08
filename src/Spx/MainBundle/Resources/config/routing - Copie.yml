@@ -14,10 +14,13 @@ spx_main_securite:
     pattern:  /securite/{item}
     defaults: { _controller: SpxMainBundle:Default:securite }
 
-spx_main_galerie:
-    pattern:  /galerie/{style}
-    defaults: { _controller: SpxMainBundle:Default:galerie }
-    
+spx_main_galerie_fonctionnement:
+    pattern:  /galerie/fonctionnement
+    defaults: { _controller: SpxMainBundle:Default:fonctionnement }
+spx_main_galerie_photos:
+    pattern:  /galerie/photos
+    defaults: { _controller: SpxMainBundle:Default:photos }
+
 spx_main_news:
     pattern:  /news
     defaults: { _controller: SpxMainBundle:Default:news }

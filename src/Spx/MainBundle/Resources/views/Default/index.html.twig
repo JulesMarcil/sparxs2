@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
         <div class="navbar" role="navigation" style="margin-bottom:0">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -45,13 +45,43 @@
             </div>
             <div class="navbar-collapse collapse pull-right">
               <ul id="top-nav" class="nav navbar-nav">
-                <li id="navbar-accueil"><a href="{{ path('spx_main_homepage')}}">Accueil</a></li>
-                <li id="navbar-produits"><a href="{{ path('spx_main_produits', {'modele' : 'topdec' }) }}">Produits</a></li>
-                <li id="navbar-habillages"><a href="{{ path('spx_main_habillages', {'type' : 'beton'}) }}">Habillages</a></li>
-                <li id="navbar-securite"><a href="{{ path('spx_main_securite', {'item' : 'anti-flash' }) }}">Sécurité</a></li>
-                <li id="navbar-galerie"><a href="{{ path('spx_main_galerie_fonctionnement')}}">Galerie</a></li>
-                <li id="navbar-news"><a href="{{ path('spx_main_news')}}">News</a></li>
-                <li id="navbar-commander"><a href="{{ path('spx_main_commander')}}"><button class="btn btn-warning">Contactez nous</button></a></li>
+                <li id="navbar-accueil" ><a href="{{ path('spx_main_homepage')}}">Accueil</a></li>
+                <li id="navbar-produits" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Produits <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li id="topdec"><a href="{{ path('spx_main_produits', {'modele' : 'topdec' }) }}">Modèle standard</a></li>
+                    <li id="topdec-xl"><a href="{{ path('spx_main_produits', {'modele' : 'topdec-xl' }) }}">Modèle XL</a></li>
+                    <li id="topdec-xxl"><a href="{{ path('spx_main_produits', {'modele' : 'topdec-xxl' }) }}">Modèle XXL</a></li>
+                    <li id="recharges"><a href="{{ path('spx_main_produits', {'modele' : 'recharges' }) }}">Recharges</a></li>
+                  </ul>
+                </li>
+             
+                <li id="navbar-habillages" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Habillages <b class="caret"></b></a>
+                  <ul class="dropdown-menu">                
+                    <li id="inox-sur-mesure"><a href="{{ path('spx_main_habillages', {'type' : 'inox-sur-mesure' }) }}">Sur mesure</a></li>
+                    <li id="inox-standard"><a href="{{ path('spx_main_habillages', {'type' : 'inox-standard' }) }}">Inox standard</a></li>
+                    <li id="beton"><a href="{{ path('spx_main_habillages', {'type' : 'beton' }) }}">Béton ciré</a></li>
+                  </ul>
+                </li>
+
+                <li id="navbar-securite" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sécurité <b class="caret"></b></a>
+                 <ul class="dropdown-menu">                
+                    <li id="anti-flash"><a href="{{ path('spx_main_securite', {'item' : 'anti-flash' }) }}">Anti-flash</a></li>
+                    <li id="qualité"><a href="{{ path('spx_main_securite', {'item' : 'qualite' }) }}">Qualité de combustion</a></li>
+                    <li id="reservoir-amovible"><a href="{{ path('spx_main_securite', {'item' : 'reservoir-amovible' }) }}">Réservoir amovible</a></li>
+                    <li id="controle-parental"><a href="{{ path('spx_main_securite', {'item' : 'controle-parental' }) }}">Contrôle parental</a></li>
+                    <li id="detection-de-CO2"><a href="{{ path('spx_main_securite', {'item' : 'detection-de-CO2' }) }}">Détection de CO2</a></li>
+                    <li id="assurances"><a href="{{ path('spx_main_securite', {'item' : 'assurances' }) }}">Assurances</a></li>
+                    <li id="conception"><a href="{{ path('spx_main_securite', {'item' : 'conception' }) }}">Conception - Qualité</a></li>
+                  </ul>   
+                </li>
+
+                <li id="navbar-galerie" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Galerie <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li id="navbar-galerie"><a href="{{ path('spx_main_galerie',{'style':'fonctionnement'}) }}">Fontionnement</a></li>
+                    <li id="navbar-galerie"><a href="{{ path('spx_main_galerie',{'style':'photos'}) }}">Photos</a></li>
+                  </ul>
+                </li>
+                <li ><a href="{{ path('spx_main_news')}}">Contactez nous</a></li>
               </ul>
             </div>
           </div>
@@ -104,7 +134,7 @@
                 <h1>100% personnalisable</h1>
                 <p>Choisissez parmi nos produits, ceux de nos partenaires ou faites-vous faire un habillage sur mesure <br/>Consultez nos solutions d'habillages en Béton ciré ou en Inox. </p>
                 <!--   temporarily on hold
-                <p><a class="btn btn-lg btn-primary" href="{{ path('spx_main_galerie_photos') }}" role="button">Voir la galerie</a></p>
+                <p><a class="btn btn-lg btn-primary" href="{{ path('spx_main_galerie',{'style':'photos'}) }}" role="button">Voir la galerie</a></p>
               -->
               </div>
             </div>

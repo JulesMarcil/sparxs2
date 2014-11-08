@@ -20,7 +20,7 @@ ul > li {
 }
 
 #top-nav > li.active {
-	background-color: rgba(210,45,0,0.1);
+	background-color: #98d097;
 }
 
 #navbar-commander > a {
@@ -62,7 +62,7 @@ ul > li {
 }
 #left-nav > li.active > a {
 	color: white;
-	background-color: #E83005;
+	background-color: #1d6d1c;
 }
 
 /* --- Galerie --- */

@@ -25,16 +25,12 @@ class DefaultController extends Controller
         return $this->render('SpxMainBundle:Securite:'.$item.'.html.twig');
     }
 
-    public function fonctionnementAction()
+    public function galerieAction($style)
     {
-        return $this->render('SpxMainBundle:Galerie:fonctionnement.html.twig');
+        return $this->render('SpxMainBundle:Galerie:'.$style.'.html.twig');
     }
-    public function photosAction()
-    {
-        return $this->render('SpxMainBundle:Galerie:photos.html.twig');
-    }
-
-    public function newsAction()
+    
+        public function newsAction()
     {
         return $this->render('SpxMainBundle:Default:news.html.twig');
     }
