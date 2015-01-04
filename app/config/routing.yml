@@ -1,4 +1,9 @@
 spx_main:
     resource: "@SpxMainBundle/Resources/config/routing.yml"
-    prefix:   /
-
+    prefix:   /{_locale}
+    defaults: {_locale:%locale%}
+    requirements:  
+        _locale: en|fr
+spx_language:
+    pattern:  /
+    defaults: {_controller: "FrameworkBundle:Redirect:redirect", route: "spx_main_homepage", permanent: true}
